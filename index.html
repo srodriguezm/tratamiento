@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tecnologías TAR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|K2D" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link href="paginita.css" rel="stylesheet">
+
+      <link rel="shortcut icon" href= "drop.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127041989-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127041989-1');
+  </script>
+  </head>
+
+  <body id="page-top" style="background-color:#2ecc71;" >
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">TAR</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>
+                <font color = "black" style="text-shadow: 3px 2px black; font-family: 'Fjalla One', sans-serif; color:white;">
+                Herramienta para la selección de tecnologías de tratamiento de aguas residuales.</font></strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="ricoPaRica">Encuentra el sistema más apropiado para tratar <br>
+              las aguas residuales de tu municipio</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#WHO">Encuentrala</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary2" id="WHO" style="background-color:#2ecc71;">
+      <div class="container" style="background-color:#2ecc71;">
+        <div class="row" style="background-color:#2ecc71;">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white" style="text-shadow: 2px 2px black; font-family: 'Fjalla One', sans-serif;">
+              Llena los campos para obtener la mejor opción.
+            </h2>
+          <form name="myForm">
+          <label>¿Cuanto presupuesto tiene para la implementación de un sistema de tratamiento?</label><br/>
+          <select class="form-control" name="Costos" form="myForm" id = "costos">
+            <option value="Bajo">Bajo ($142992 - $280688 COP/habitante)</option>
+            <option value="Medio">Medio ($280689 - $418384 COP/habitante)</option>
+            <option value="Alto">Alto ($418385 - $556080 COP/habitante)</option>
+          </select><br/>
+          <label>¿Tiene personal capacitado?</label><br/>
+            <input class="form-check-input" type="radio" name="PersonalCapacitado" value="Si"/>Sí.<br/>
+            <input class="form-check-input" type="radio" name="PersonalCapacitado" value="No"/>No.<br/>
+          <label>¿Puede garantizar flujo eléctrico constante?</label><br/>
+            <input type="radio" name="Energia" value="Si"/>Sí.<br/>
+            <input type="radio" name="Energia" value="No"/>No.<br/>
+          <label>¿Cuál es la densidad poblacional proyectada?</label><br/>
+            <input class="form-control" type="number" name="poblacion" placeholder="Ingrese densidad"/><br/>
+          <label>¿Cuál es la concentración de DBO5 en el agua residual?</label><br/>
+            <input class="form-control" type="number" name="DBO5" placeholder="Ingrese concentración de DBO5 (mg/L)"/><br/>
+          <label>¿Cuál es la concentración de DQO en el agua residual?</label><br/>
+            <input class="form-control" type="number" name="DQO" placeholder="Ingrese concentración de DQO (mg/L)"/><br/>
+          <label>¿Cuál es la concentración de SST en el agua residual?</label><br/>
+            <input class="form-control" type="number" name="SST" placeholder="Ingrese concentración de SST (mg/L)"/><br/>
+          <label>¿Cuál es la concentración de Nitrógeno en el agua residual?</label><br/>
+            <input class="form-control" type="number" name="Nitrogeno" placeholder="Ingrese concentración de Nitrógeno (mg/L)"/><br/>
+          <label>¿Cuál es la concentración de Fósforo en el agua residual?</label><br/>
+            <input class="form-control" type="number" name="Fosforo" placeholder="Ingrese concentración de Fósforo (mg/L)"/><br/>
+          <label>¿Cuanta área tiene disponible para la construcción de la PTAR?</label><br/>
+          <select class="form-control" name="Area" form="myForm" id="Area">
+            <option value="1">Reducida (0.03 a 0.09 metros/habitante)</option>
+            <option value="2">Pequeña (0.1 a 0.24 metros/habitante)</option>
+            <option value="3">Intermedia (0.25 a 0.49 metros/habitante)</option>
+            <option value="4">Significativa (0.5 a 1 metros/habitante)</option>
+            <option value="5">Grande (1 a 2.9 metros/habitante)</option>
+            <option value="6">Muy Grande (>= a 3 metros/habitante)</option>
+          </select><br/>
+          <label>¿A qué proximidad va a estar la PTAR de zonas residenciales?</label><br/>
+          <select class="form-control" name="proximidad" form="myForm" id="proximidad">
+            <option value="Cerca">Cerca (Menor a 75 metros)</option>
+            <option value="Lejos">Lejos (Mayor a 75 metros)</option>
+          </select><br/>
+          <label>¿Cuál es el clima del municipio?</label><br/>
+          <select class="form-control" name="clima" form="myForm" id="clima">
+            <option value="Frio">Frio</option>
+            <option value="Templado">Templado</option>
+            <option value="Caliente">Caliente</option>
+          </select><br/>
+          <label>¿Cuál es la intensidad de las lluvias?</label><br/>
+          <select class="form-control" name="lluvias" form="myForm" id="lluvias">
+            <option value="Poca">No hay</option>
+            <option value="Hay">Si hay</option>
+            <option value="Grave">Si hay y muchas</option>
+          </select><br/><br/>
+          <button class="btn btn-primary btn-xl js-scroll-trigger" onclick="resultadoTecnologias(); return false;">Listo!</button>
+          <h1></h1>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary7" id="Contacto" style="background-color:#2ecc71;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center" id="demo">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary7" id="Contacto" style="background-color:#2ecc71;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white" style="text-shadow: 2px 2px black; font-family: 'Fjalla One', sans-serif;">Contactanos</h2>
+          </div>
+                <div class="col-lg-8 mx-auto text-center">
+                  <hr class="light my-4">
+                    <p class="text-faded mb-4" style="text-shadow: 2px 2px black; color:white;">Proyecto final-tratamiento de aguas residuales, equipo:</p>
+                            <p class="text-faded mb-4" style="text-shadow: 2px 2px black; color:white;"> Bibiana Convers Contreras<br>
+                            Mayra Muños Ariza<br>
+                            Diana Boada Florez<br>
+                            Melissa Negrete Anaya</p>
+                </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+    <script>
+    function resultadoTecnologias(){
+      console.log(document.getElementById("costos").value);
+      console.log(document.forms["myForm"]["PersonalCapacitado"].value);
+      console.log(document.forms["myForm"]["Energia"].value);
+      console.log(document.forms["myForm"]["DBO5"].value);
+      console.log(document.forms["myForm"]["DQO"].value);
+      console.log(document.forms["myForm"]["SST"].value);
+      console.log(document.forms["myForm"]["Nitrogeno"].value);
+      console.log(document.forms["myForm"]["Fosforo"].value);
+      console.log(document.getElementById("clima").value);
+      console.log(document.getElementById("Area").value);
+      console.log(document.getElementById("proximidad").value);
+      console.log(document.getElementById("lluvias").value);
+        var tecnologias = ["Bar Screens", "Drum Screens", "Desarenador","Tanque de homogeneización",
+         "Sedimentador primario","Sedimentador primario químicamente asistido", "Tanque séptico",
+         "CSTR", "Lodos activados convencional", "Lodos activados aireación extendida",
+         "Filtro percolador baja tasa", "Filtro percolador alta tasa", "RBC",
+         "Digestor anaerobio completamente mezclado", "UASB", "Humedal de superficie libre",
+         "Humedal de flujo subsuperficial", "Laguna facultativa", "Laguna anaerobia-facultativa",
+         "Laguna de maduración", "SBR", "Lodos activados con remoción de N2",
+         "Lodos activados con remoción de N2 Y P"];
+         console.log(tecnologias)
+        var gastos=["Bajo","Medio","Bajo","Bajo","Bajo","Alto","Bajo","Bajo","Alto","Alto","Bajo","Alto","Alto","Bajo","Bajo","Bajo","Alto","Bajo","Bajo","Medio","Alto","Alto","Alto"];
+        var areas = ["2","3", "3","3","1", "1","1","1","2","2","2","2","2","2","1","6",
+          "6","6","5","6","2","2","2"];
+        var dbo5s=[0,0,0,0,2,3,2,4,5,5,5,5,5,5,4,5,5,4,4,5,5,5,5];
+        var dbqos=[0,0,0,0,2,3,2,4,5,5,5,5,5,5,3,4,4,4,4,4,5,5,5];
+        var ssts=[2,2,2,0,3,4,3,5,5,5,5,5,5,5,4,5,5,4,4,4,5,5,5];
+        var n2=[0,0,0,0,2,2,2,2,3,3,3,3,3,3,3,1,3,3,3,3,3,4,4];
+        var p=[0,0,0,0,2,4,2,2,2,2,2,2,2,3,2,2,2,2,2,3,2,2,4];
+        var normaDBO5=90;
+        var normaDQO=180;
+        var normaSST=90;
+        var norman=0.1;
+        var normap=0.1;
+        var Costos=document.getElementById("costos").value;
+        var PersonalCapacitado=document.forms["myForm"]["PersonalCapacitado"].value;
+        var Energia=document.forms["myForm"]["Energia"].value;
+        var DBO5=document.forms["myForm"]["DBO5"].value;
+        var DQO=document.forms["myForm"]["DQO"].value;
+        var SST=document.forms["myForm"]["SST"].value;
+        var Nitrogeno=document.forms["myForm"]["Nitrogeno"].value;
+        var Fosforo=document.forms["myForm"]["Fosforo"].value;
+        var Area=document.getElementById("Area").value;
+        var proximidad=document.getElementById("proximidad").value;
+        var clima=document.getElementById("clima").value;
+        var lluvias=document.getElementById("lluvias").value;
+        if(Costos=="Bajo"){
+          var i;
+          for (i = gastos.length; i >=0; i--) {
+            if(gastos[i]!="Bajo")
+            tecnologias.splice(i, 1);
+          }
+        }
+        if(Costos=="Medio"){
+          var i;
+          for (i = gastos.length; i >=0; i--) {
+            if(gastos[i]=="Alto")
+            tecnologias.splice(i, 1);
+          }
+        }
+        if(PersonalCapacitado=="No"){
+          var i;
+          for (i = tecnologias.length; i >=0; i--) {
+            if(tecnologias[i]=="Sedimentador primario químicamente asistido"||tecnologias[i]=="CSTR"||tecnologias[i]=="Lodos activados aireación extendida"||tecnologias[i]=="Lodos activados convencional"||tecnologias[i]=="Filtro percolador alta tasa"||tecnologias[i]=="UASB"||tecnologias[i]=="RBC"||tecnologias[i]=="Lodos activados con remoción de N2"||tecnologias[i]=="Lodos activados con remoción de N2 Y P")
+            tecnologias.splice(i, 1);
+          }
+        }
+        if(Energia=="No")
+        {
+          var i;
+          for (i = tecnologias.length; i >=0; i--) {
+            if(tecnologias[i]=="Drum Screens"||tecnologias[i]=="CSTR"||tecnologias[i]=="Lodos activados aireación extendida"||tecnologias[i]=="Lodos activados convencional"||tecnologias[i]=="Filtro percolador alta tasa"||tecnologias[i]=="Filtro percolador baja tasa"||tecnologias[i]=="RBC"||tecnologias[i]=="Lodos activados con remoción de N2"||tecnologias[i]=="Lodos activados con remoción de N2 Y P")
+            tecnologias.splice(i, 1);
+          }
+        }
+        var i;
+        for (i = areas.length; i >=0; i--) {
+          if(areas[i]>Area)
+          tecnologias.splice(i, 1);
+        }
+        if(proximidad=="Cerca")
+        {
+          var i;
+          for (i = tecnologias.length; i >=0; i--) {
+            if(tecnologias[i]=="Laguna anaerobia-facultativa"||tecnologias[i]=="Lodos activados convencional"||tecnologias[i]=="Laguna facultativa"||tecnologias[i]=="Filtro percolador baja tasa")
+            tecnologias.splice(i, 1);
+          }
+        }
+        if(clima=="Frio"||clima=="Templado")
+        {
+          var i;
+          for (i = tecnologias.length; i >=0; i--) {
+            if(tecnologias[i]=="Laguna anaerobia-facultativa"||tecnologias[i]=="Laguna facultativa")
+            tecnologias.splice(i, 1);
+          }
+        }
+        if(lluvias=="Grave")
+        {
+          var i;
+          for (i = tecnologias.length; i >=0; i--) {
+            if(tecnologias[i]=="Humedal de flujo subsuperficial"||tecnologias[i]=="Humedal de superficie libre"||tecnologias[i]=="Filtro percolador baja tasa"||tecnologias[i]=="Laguna anaerobia-facultativa"||tecnologias[i]=="Laguna facultativa"||tecnologias[i]=="Lodos activados con remoción de N2"||tecnologias[i]=="Lodos activados con remoción de N2 Y P")
+            tecnologias.splice(i, 1);
+          }
+        }
+        var DBO5Resultado=(DBO5-normaDBO5)/DBO5;
+        var DBO5R;
+        if(DBO5Resultado<=0)
+        {
+          DBO5R=0;
+        }
+        if(0<DBO5Resultado&&DBO5Resultado<0.2)
+        {
+          DBO5R=1;
+        }
+        if(0.2<=DBO5Resultado&&DBO5Resultado<0.4)
+        {
+          DBO5R=2;
+        }
+        if(0.4<=DBO5Resultado&&DBO5Resultado<0.6)
+        {
+          DBO5R=3;
+        }
+        if(0.6<=DBO5Resultado&&DBO5Resultado<0.8)
+        {
+          DBO5R=4;
+        }
+        if(0.8<=DBO5Resultado&&DBO5Resultado<=1)
+        {
+          DBO5R=5;
+        }
+        var i;
+        for (i = dbo5s.length; i >=0; i--) {
+          if(dbo5s[i]<DBO5R)
+          tecnologias.splice(i, 1);
+        }
+        var DQOResultado=(DQO-normaDQO)/DQO;
+        var DQOR;
+        if(DQOResultado<=0)
+        {
+          DQOR=0;
+        }
+        if(0<DQOResultado&&DQOResultado<0.2)
+        {
+          DQOR=1;
+        }
+        if(0.2<=DQOResultado&&DQOResultado<0.4)
+        {
+          DQOR=2;
+        }
+        if(0.4<=DQOResultado&&DQOResultado<0.6)
+        {
+          DQOR=3;
+        }
+        if(0.6<=DQOResultado&&DQOResultado<0.8)
+        {
+          DQOR=4;
+        }
+        if(0.8<=DQOResultado&&DQOResultado<=1)
+        {
+          DQOR=5;
+        }
+        for (i = dbqos.length-1; i >=0; i--) {
+          if(dbqos[i]<DQOR)
+          tecnologias.splice(i, 1);
+        }
+
+        var SSTResultado=(SST-normaSST)/SST;
+        var SSTR;
+        if(SSTResultado<=0)
+        {
+          SSTR=0;
+        }
+        if(0<SSTResultado&&SSTResultado<0.2)
+        {
+          SSTR=1;
+        }
+        if(0.2<=SSTResultado&&SSTResultado<0.4)
+        {
+          SSTR=2;
+        }
+        if(0.4<=SSTResultado&&SSTResultado<0.6)
+        {
+          SSTR=3;
+        }
+        if(0.6<=SSTResultado&&SSTResultado<0.8)
+        {
+          SSTR=4;
+        }
+        if(0.8<=SSTResultado&&SSTResultado<=1)
+        {
+          SSTR=5;
+        }
+        for (i = ssts.length-1; i >=0; i--) {
+          if(ssts[i]<SSTR)
+          tecnologias.splice(i, 1);
+        }
+        for(i=0; i<tecnologias.length;i++){
+          var tecnologia =document.createElement('h2');
+          tecnologia.textContent=tecnologias[i];
+          var div=document.getElementById('demo');
+          div.appendChild(tecnologia);
+        }
+    }
+    </script>
+  </body>
+
+</html>

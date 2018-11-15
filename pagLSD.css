@@ -1,0 +1,34 @@
+.bg-primary32 {
+    background-color: green !important;
+    background-image: url(pruebaFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .bg-primary33 {
+    background-color: rgb(19, 1, 102) !important;
+    background-image: url(fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: right;
+  }
+  .bg-primary34 {
+    background-color: #CA31AB !important;
+    background-repeat: no-repeat;
+    background-image: url(tips.png);
+    background-size: 460px;
+    background-position: left;
+  }
+  .bg-primary35 {
+    background-color: rgb(6, 1, 44) !important;
+    background-repeat: no-repeat;
+    background-size: 460px;
+    background-position: left;
+  }
+  .p1{
+    font-size:2ch;
+    color: aliceblue;
+  }
+
+
+ 
